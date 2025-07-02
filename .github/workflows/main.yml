@@ -30,6 +30,7 @@ jobs:
           -d testData.csv        
      
       - name: Archive Newman reports
+        if: always()
         uses: actions/upload-artifact@v4.6.2
         with:
           name: Newman Report
