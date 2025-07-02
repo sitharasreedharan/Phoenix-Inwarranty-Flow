@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * 1-5' #8am Sydney time
+    - cron: '0 22 * * 1-5' #8am Sydney time monday to friday
 jobs:
   run-postman-jobs:
     runs-on: ubuntu-latest
